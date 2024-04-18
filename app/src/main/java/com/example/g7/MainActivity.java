@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     private LinearLayout loginLayout;
     private LinearLayout registrationLayout;
-    private DatabaseHelper databaseHelper;
 
     private EditText emailEditText;
     private EditText passwordEditText;
@@ -26,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        databaseHelper = new DatabaseHelper(this);
+        DatabaseHelper databaseHelper = new DatabaseHelper(this);
 
         Button getStartedButton = findViewById(R.id.getStartedButton);
         loginLayout = findViewById(R.id.loginLayout);

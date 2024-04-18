@@ -9,6 +9,13 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/welcom_e"
+        android:scaleType="centerCrop" />
+
     <TextView
         android:id="@+id/welcomeMessageTextView"
         android:layout_width="wrap_content"
@@ -60,6 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:paddingTop="270dp"
         android:layout_below="@id/welcomeMessageTextView"
         android:visibility="gone">
 
@@ -68,8 +76,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login to an Account"
+            android:textColor="@android:color/holo_blue_bright"
             android:textSize="28sp"
-            android:textColor="@android:color/black"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="16dp"
             android:layout_gravity="center"/>
@@ -119,6 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Don't have an account? Register"
+            android:textColor="@color/black"
             android:clickable="true"
             android:textAppearance="?android:textAppearanceSmall"
             android:layout_gravity="center"/>
@@ -131,6 +140,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:paddingTop="270dp"
         android:layout_below="@id/welcomeMessageTextView"
         android:visibility="gone">
 
@@ -141,7 +151,7 @@
             android:layout_height="wrap_content"
             android:text="Register for an Account"
             android:textSize="28sp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/holo_blue_bright"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="16dp"
             android:layout_gravity="center"/>
@@ -208,6 +218,7 @@
             android:layout_marginTop="16dp"
             android:text="Already have an account? Login"
             android:clickable="true"
+            android:textColor="@color/black"
             android:textAppearance="?android:textAppearanceSmall"
             android:layout_gravity="center"/>
 
